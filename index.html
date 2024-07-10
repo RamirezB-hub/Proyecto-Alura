@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script language="JavaScript" type="text/javascript" src="functions.js"></script>
+    <title>Encriptador</title>
+</head>
+<body class="fondo">
+    <header class="logo">
+        <img src="assets/alura_logo.png" alt="alura logo">
+    </header>
+    <div class="izquierda">
+        <main class="mensajes">
+            <div class="mensaje_desencriptado_div">
+                <!-- <input type="text" id="mensaje_des" class="mensaje_desencriptado" placeholder="Ingrese texto aquí">                 -->
+                <textarea id="mensaje_des" class="mensaje_desencriptado" placeholder="Ingrese el texto que desees encriptar aquí" cols="60" rows="7"></textarea>
+            </div>
+        </main>
+        <footer class="botones">            
+                <button type="button" class="btn_Encriptar" onclick="encriptar()">Encriptar</button>                
+                <button type="button" class="btn_desencriptar" onclick="desencriptar()">Desencriptar</button>                                         
+        </footer>
+    </div>
+    <div class="derecha">
+        <img src="assets/Muñeco.png" alt="sin resultado de búsqueda" class="sin-resultado" id="sin_resultado">
+        <label class="alerta" id="alerta_lbl"><strong>Ningún mensaje fue encontrado</strong></label>
+        <input type="text" id="mensaje_en" class="mensaje_encriptado" placeholder="Ingrese el texto que desees desencriptar aquí">            
+        <button type="button" class="btn_copiar" onclick="copiar()">Copiar</button>   
+    </div>
+</body>
+</html>
